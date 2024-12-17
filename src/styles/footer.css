@@ -1,0 +1,16 @@
+:root {
+  --bgColor: #ffd400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: var(--bgColor);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
