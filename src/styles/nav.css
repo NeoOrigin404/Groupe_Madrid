@@ -1,0 +1,35 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bgColor);
+  justify-content: space-between;
+}
+
+div {
+  list-style: none;
+}
+
+div > p {
+  font-style: none;
+  text-decoration: none;
+}
+
+#titre {
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+#tri {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#search > input {
+  width: 15rem;
+}
+
+#compte {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
