@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffd400;
+  justify-content: space-between;
+}
+
+div > ul {
+  list-style: none;
+}
+
+div > ul > li > p {
+  font-style: none;
+  text-decoration: none;
+}
+
+#tri {
+  display: flex;
+}

@@ -1,3 +1,6 @@
+import Nav from "./Nav.tsx";
+import Footer from "./Footer.tsx";
+
 function App() {
   return (
     <>
