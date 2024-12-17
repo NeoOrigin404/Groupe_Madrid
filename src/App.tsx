@@ -37,7 +37,13 @@ export default function App() {
   return (
     <>
       <main>
-        <h1>TV Time</h1>
+        <div>
+          <h1>Films tendance</h1>
+          <h2>
+            Films comptabilisant le plus de réactions au cours des trois
+            derniers jours
+          </h2>
+        </div>
         <FilmList filmsSelection={filmsSelection} />
       </main>
     </>
