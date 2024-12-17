@@ -29,14 +29,23 @@ const filmsSelection = [
   },
 ];
 
-export default function FilmCard() {
+interface TypesFilm {
+  film: {
+    affiche: string;
+    titre: string;
+    duree: string;
+    annee: number;
+  };
+}
+
+export default function FilmCard({ film }: TypesFilm) {
   return (
     <>
       <div className="film-card">
-        <img src={filmsSelection.affiche} alt={filmsSelection.titre} />
-        <h2>{filmsSelection.titre}</h2>
+        <img src={film.affiche} alt={film.titre} />
+        <h2>{film.titre}</h2>
         <p>
-          {filmsSelection.duree} . {filmsSelection.annee}
+          {film.duree} . {film.annee}
         </p>
       </div>
     </>
