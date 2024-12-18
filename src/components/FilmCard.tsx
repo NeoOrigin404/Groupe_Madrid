@@ -1,11 +1,9 @@
-import "../styles/filmcard.css";
-
 interface TypesFilm {
   film: {
     affiche: string;
     titre: string;
     duree: string;
-    annee: number;
+    annee: string;
     nbsaisons?: string;
     genre: string;
   };
