@@ -1,21 +1,27 @@
 nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
   background-color: var(--bgColor);
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 1.5rem;
 }
 
-div {
-  list-style: none;
+nav > div > img {
+  height: 56px;
+  padding: 8px;
+}
+
+.logo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
 }
 
 div > p {
-  font-style: none;
-  text-decoration: none;
-}
-
-#titre {
-  padding: 2rem 2rem 2rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 #tri {
@@ -24,12 +30,34 @@ div > p {
   gap: 2rem;
 }
 
+#search {
+  display: flex;
+}
+
+#search > img {
+  height: 40px;
+}
+
 #search > input {
+  padding: 0.5rem;
   width: 15rem;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  outline: none;
+  font-size: 16px;
+}
+
+#search > select {
+  border-radius: 5px;
+  margin-left: 1.5rem;
 }
 
 #compte {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.5rem;
+  cursor: pointer;
 }

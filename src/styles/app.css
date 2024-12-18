@@ -10,12 +10,15 @@
 }
 
 .title-contain {
-  padding: 3rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem 0 0 4rem;
 }
 
 .film-container {
   display: flex;
   flex-direction: row;
-  padding: 3rem;
+  padding: 4rem;
   gap: 1rem;
 }
