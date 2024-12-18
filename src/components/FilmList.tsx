@@ -79,6 +79,86 @@ const filmsSelection = [
   },
   {
     affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F357242%2Fposters%2F671ae6ac0e39a_t.jpg&w=384&q=75",
+    titre: "Heretic",
+    duree: "1h50",
+    annee: "2024",
+    genre: "film",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F136493%2Fposters%2F65c973c2e4b95_t.jpg&w=384&q=75",
+    titre: "Wicked: Part One",
+    duree: "2h41",
+    annee: "2024",
+    genre: "film",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F355643%2Fposters%2F6726523f9a7e8_t.jpg&w=384&q=75",
+    titre: "The Substance",
+    duree: "2h18",
+    annee: "2024",
+    genre: "film",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F353754%2Fposters%2F673e1f46c5b48_t.jpg&w=384&q=75",
+    titre: "Vaiana 2",
+    duree: "1h40",
+    annee: "2024",
+    genre: "film",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F49196%2Fposters%2F6629d3a324504_t.jpg&w=384&q=75",
+    titre: "Deadpool 3",
+    duree: "2h08",
+    annee: "2024",
+    genre: "film",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F344306%2Fposters%2F65b390a802573_t.jpg&w=384&q=75",
+    titre: "Immaculée",
+    duree: "1h29",
+    annee: "2024",
+    genre: "film",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F358321%2Fposters%2F66ae8c958ddc3_t.jpg&w=384&q=75",
+    titre: "Subservience",
+    duree: "1h46",
+    annee: "2024",
+    genre: "film",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F355922%2Fposters%2F66d2dcfde798d_t.jpg&w=384&q=75",
+    titre: "Trap",
+    duree: "1h45",
+    annee: "2024",
+    genre: "film",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F355404%2Fposters%2F671dfd92870e8_t.jpg&w=384&q=75",
+    titre: "Juré n°2",
+    duree: "1h54",
+    annee: "2024",
+    genre: "film",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F362267%2Fposters%2F6755e0f69f3a5_t.jpg&w=384&q=75",
+    titre: "An Evening with Dua Lipa",
+    duree: "49 min",
+    annee: "2024",
+    genre: "film",
+  },
+  {
+    affiche:
       "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fposters%2F5d1bfa6c30c50.jpg&w=256&q=75",
     titre: "Yellowstone",
     nbsaisons: "5",
@@ -220,7 +300,7 @@ export default function FilmList() {
               <FilmCard key={film.titre} film={film} />
             ))
           ) : (
-            <p>""</p>
+            <p>Pas de résultat</p>
           )}
         </div>
       </main>
