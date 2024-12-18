@@ -23,3 +23,18 @@
   margin: 0 auto;
   font-size: large;
 }
+
+.info-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.film-info {
+  font-weight: normal;
+}
+
+.serie-saison {
+  font-weight: normal;
+}

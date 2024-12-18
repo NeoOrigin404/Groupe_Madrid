@@ -15,10 +15,10 @@ const filmsSelection = [
   },
   {
     affiche:
-      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F342389%2Fposters%2F65bc37cc4b0a0_t.jpg&w=384&q=75",
-    titre: "Red One",
-    duree: "2h03",
-    annee: "2024",
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fmovie%2F367%2Fposters%2F6432e232e9290_t.jpg&w=384&q=75",
+    titre: "Rogue One: A Star Wars Story",
+    duree: "2h14",
+    annee: "2016",
     genre: "film",
   },
   {
@@ -161,7 +161,7 @@ const filmsSelection = [
     affiche:
       "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fposters%2F5d1bfa6c30c50.jpg&w=256&q=75",
     titre: "Yellowstone",
-    nbsaisons: "5",
+    nbsaisons: "Saison 5",
     annee: "2018",
     genre: "série",
   },
@@ -170,7 +170,7 @@ const filmsSelection = [
       "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fseries%2F367118%2Fposters%2F673bd923f1637.jpg&w=256&q=75",
     titre: "Dune : Prophecy",
     annee: "2024",
-    nbsaisons: "1",
+    nbsaisons: "Saison 1",
     genre: "série",
   },
   {
@@ -178,7 +178,7 @@ const filmsSelection = [
       "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fseries%2F371028%2Fposters%2F617f6a8c59e8f.jpg&w=256&q=75",
     titre: "Arcane",
     annee: "2021",
-    nbsaisons: "1",
+    nbsaisons: "Saison 2",
     genre: "série",
   },
   {
@@ -186,7 +186,7 @@ const filmsSelection = [
       "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fseries%2F453280%2Fposters%2F675c4b518d9da.jpg&w=256&q=75",
     titre: "Secret Level",
     annee: "2024",
-    nbsaisons: "1",
+    nbsaisons: "Saison 1",
     genre: "série",
   },
   {
@@ -223,10 +223,50 @@ const filmsSelection = [
   },
   {
     affiche:
-      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fseries%2F388589%2Fposters%2F671e4a1387c06_t.jpg&w=384&q=75",
-    titre: "Opérations Spéciales : Lionesss",
-    annee: "2023",
-    nbsaisons: "En cours",
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fseries%2F432708%2Fposters%2F66a04d124588c_t.jpg&w=384&q=75",
+    titre: "Senna",
+    annee: "2024",
+    nbsaisons: "Terminée",
+    genre: "série",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fposters%2F293088-6_t.jpg&w=384&q=75",
+    titre: "One-Punch Man",
+    annee: "2015",
+    nbsaisons: "Terminée",
+    genre: "série",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fposters%2F321060-2_t.jpg&w=384&q=75",
+    titre: "The OA",
+    annee: "2016",
+    nbsaisons: "Terminée",
+    genre: "série",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fposters%2F153021-58_t.jpg&w=384&q=75",
+    titre: "The Walking Dead",
+    annee: "2010",
+    nbsaisons: "Terminée",
+    genre: "série",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fposters%2F80379-18_t.jpg&w=384&q=75",
+    titre: "The Big Bang Theory",
+    annee: "2007",
+    nbsaisons: "Terminée",
+    genre: "série",
+  },
+  {
+    affiche:
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fseries%2F268592%2Fposters%2F5ec0923cb5ac1_t.jpg&w=384&q=75",
+    titre: "The 100",
+    annee: "2014",
+    nbsaisons: "Terminée",
     genre: "série",
   },
 ];

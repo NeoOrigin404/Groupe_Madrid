@@ -15,9 +15,12 @@ export default function FilmCard({ film }: FilmTypes) {
       <img src={film.affiche} alt={film.titre} className="img-film" />
       <div className="info-film">
         <h2 className="film-title">{film.titre}</h2>
-        <p className="film-info">
-          {film.duree} ▪️ {film.annee}
-        </p>
+        <div className="info-card">
+          <p className="film-info">
+            {film.duree} - {film.annee}
+          </p>
+          <p className="serie-saison">{film.nbsaisons}</p>
+        </div>
       </div>
     </div>
   );
