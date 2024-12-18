@@ -17,7 +17,7 @@ export default function FilmCard({ film }: FilmTypes) {
         <h2 className="film-title">{film.titre}</h2>
         <div className="info-card">
           <p className="film-info">
-            {film.duree} - {film.annee}
+            {film.duree} {film.annee}
           </p>
           <p className="serie-saison">{film.nbsaisons}</p>
         </div>
