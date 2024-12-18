@@ -2,4 +2,23 @@
   width: 200px;
   border-radius: 5px;
   object-fit: cover;
+  cursor: pointer;
+}
+.film-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+}
+.film-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.film-title {
+  max-width: 12rem;
+  margin: 0 auto;
+  font-size: large;
 }

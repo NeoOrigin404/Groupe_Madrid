@@ -6,6 +6,8 @@ interface TypesFilm {
     titre: string;
     duree: string;
     annee: number;
+    nbsaisons?: string;
+    genre: string;
   };
 }
 
@@ -22,12 +24,3 @@ export default function FilmCard({ film }: TypesFilm) {
     </div>
   );
 }
-
-/* <article>
-      <div>
-        <h2>{house.name}</h2>
-        <h3>{house.type}</h3>
-        <p>{house.desc}</p>
-      </div>
-      <img src={house.img} alt={house.name} />
-    </article> */
