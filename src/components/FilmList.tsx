@@ -118,9 +118,9 @@ const filmsSelection = [
   },
   {
     affiche:
-      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fseries%2F441315%2Fposters%2F67520ffb9601a.jpg&w=256&q=75",
-    titre: "Black Doves",
-    annee: "2024",
+      "https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Fseries%2F74796%2Fposters%2F66d7d367dc8fd.jpg&w=256&q=75",
+    titre: "Bleach",
+    annee: "2004",
     nbsaisons: "En cours",
     genre: "série",
   },
@@ -151,20 +151,20 @@ const filmsSelection = [
 ];
 
 export default function FilmList() {
-  /* const [title, setTitle] = useState(""); */
-  const [type, setType] = useState("");
+  const [titre, setTitre] = useState("");
+  const [genre, setGenre] = useState("");
 
-  // const handleChangeTitle = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   setTitle(event.currentTarget.value);
-  // };
-
-  const handleChangeType = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setType(event.currentTarget.value);
+  const handleChangeTitre = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setTitre(event.currentTarget.value);
   };
 
-  /* const filteredGenre = filmsSelection.filter((genreFiltered) =>
-    !genre ? genreFiltered : genreFiltered.genre === genre).filter((genreFiltered) => genreFiltered.titre.includes(titre)),
-  ); */
+  const handleChangeGenre = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setGenre(event.currentTarget.value);
+  };
+
+  const filteredGenre = filmsSelection
+    .filter((film) => (!genre ? film : film.genre === genre))
+    .filter((film) => film.titre.includes(titre));
 
   return (
     <>
@@ -186,11 +186,15 @@ export default function FilmList() {
 
         <div id="search">
           <img src="./public/search.png" alt="" />
-          <input placeholder="Rechercher des titres" type="text" />
-          <select onChange={handleChangeType}>
+          <input
+            placeholder="Rechercher des titres"
+            type="text"
+            onChange={handleChangeTitre}
+          />
+          <select onChange={handleChangeGenre}>
             <option value="">All</option>
-            <option value="Film">Film</option>
-            <option value="Série">Série</option>
+            <option value="film">Film</option>
+            <option value="série">Série</option>
           </select>
         </div>
 
@@ -203,17 +207,20 @@ export default function FilmList() {
       <main>
         {/* Films */}
         <div className="title-contain">
-          <h2>Films tendance</h2>
+          <h2>Films et séries tendances</h2>
           <h3>
-            Films comptabilisant le plus de réactions au cours des trois
-            derniers jours
+            Films et séries comptabilisant le plus de réactions au cours des
+            trois derniers jours !
           </h3>
         </div>
         <div className="film-container">
-          {filmsSelection.map((film) => (
-            <FilmCard key={film.titre} film={film} />
-          ))}
-          {/* <FilmCard film={filmsSelection[genre]} /> */}
+          {filteredGenre.length ? (
+            filteredGenre.map((film) => (
+              <FilmCard key={film.titre} film={film} />
+            ))
+          ) : (
+            <p>""</p>
+          )}
         </div>
       </main>
     </>

@@ -1,4 +1,4 @@
-interface TypesFilm {
+interface FilmTypes {
   film: {
     affiche: string;
     titre: string;
@@ -9,7 +9,7 @@ interface TypesFilm {
   };
 }
 
-export default function FilmCard({ film }: TypesFilm) {
+export default function FilmCard({ film }: FilmTypes) {
   return (
     <div className="film-card">
       <img src={film.affiche} alt={film.titre} className="img-film" />
