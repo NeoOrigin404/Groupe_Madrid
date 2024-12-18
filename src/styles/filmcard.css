@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   margin: 0 2rem;
 }
+
 .film-card {
   display: flex;
   flex-direction: column;

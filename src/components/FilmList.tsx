@@ -2,6 +2,7 @@ import { useState } from "react";
 import FilmCard from "./FilmCard.tsx";
 import "../styles/nav.css";
 import "../styles/filmcard.css";
+import "../styles/footer.css";
 
 const filmsSelection = [
   {
@@ -164,7 +165,7 @@ export default function FilmList() {
 
   const filteredGenre = filmsSelection
     .filter((film) => (!genre ? film : film.genre === genre))
-    .filter((film) => film.titre.includes(titre));
+    .filter((film) => film.titre.toLowerCase().includes(titre.toLowerCase()));
 
   return (
     <>
@@ -223,6 +224,9 @@ export default function FilmList() {
           )}
         </div>
       </main>
+      <footer>
+        <h2>© 2024, MAD MADRID, a Wild Wilder Company</h2>
+      </footer>
     </>
   );
 }
